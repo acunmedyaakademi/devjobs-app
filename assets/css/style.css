@@ -148,7 +148,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
   display: flex;
-  max-width: 425px;
+
 
   padding: 32px 24px;
   justify-content: space-between;
@@ -157,7 +157,53 @@ h1, h2, h3, h4, h5, h6 {
 
 .head-container{
   height: 136px;
-  background-image: url("/assets/images/triangles.png");
+  background: url("/assets/images/triangles.png");
   background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
 }
 
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  background-color: #FFFFFF;
+  justify-content: space-between;
+  height: 80px;
+  border-radius: 5px;
+  margin-top: -40px;
+}
+
+.search-container input{
+  position: relative;
+  border: none;
+  margin-left: 24px;
+  width: 60%;
+  height: 40px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.icons-filter-search{
+  display: flex;
+}
+
+.icons-filter-search {
+  margin-right: 16px;
+  gap: 16px;
+}
+
+.search-icon{
+  background-color: #5964e0;
+  padding: 10px;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+
+.filter-icon{
+  padding: 10px;
+  border-radius: 5px;
+}
