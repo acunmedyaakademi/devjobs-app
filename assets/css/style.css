@@ -329,6 +329,8 @@ input:focus {
 
   .container .mod-container {
     padding-top: 42px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .container .search-container {
@@ -476,6 +478,12 @@ input:focus {
 }
 
 @media(width > 1440px) {
+  .container .mod-container {
+    padding-top: 45px;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
   .head-container {
     background-image: url("/assets/images/triangle-desktop.png");
     height: 161px;
