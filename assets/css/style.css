@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-  --purple: #A729F5;
-  --dark-navy: #313E51;
-  --navy: #3B4D66;
-  --grey-navy: #626C7F;
-  --light-bluish: #ABC1E1;
-  --light-gray: #F4F6FA;
+  --violet: #5964E0;
+  --light-violet: #939BF4;
+  --very-dark-blue: #19202D;
+  --midnight: #121721;
+  --gray: #9DAEC2;
+  --light-gray: #F4F6F8;
   --pure-white: #fff;
-  --green: #26D782;
-  --red: #EE5454;
+  --dark-gray: #6E8098;
 }
 
 body[data-theme="light"] {
@@ -17,21 +16,20 @@ body[data-theme="light"] {
   --bg-image-desktop: url('../images/bg-desktop-light.svg');
   --bg-color: var(--light-gray);
   --fg-color: var(--pure-white);
-  --text-color: var(--dark-navy);
-  --small-text-color: var(--grey-navy);
-  --icon-color: var(--grey-navy);
+  --text-color: var(--very-dark-blue);
+  --small-text-color: var(--dark-gray);
+  --icon-color: var(--dark-gray);
   --error-color: var(--red)
 }
 
 body[data-theme="dark"] {
   --bg-image-mobile: url('../images/bg-mobile-dark.svg');
   --bg-image-desktop: url('../images/bg-desktop-dark.svg');
-  --bg-color: var(--dark-navy);
-  --fg-color: var(--navy);
+  --bg-color: var(--midnight);
+  --fg-color: var(--very-dark-blue);
   --text-color: var(--pure-white);
   --small-text-color: var(--light-bluish);
   --icon-color: var(--pure-white);
-  --error-color: var(--pure-white);
 }
 
 .dark-mode-image,
@@ -134,7 +132,7 @@ h6 {
   gap: 16px;
 
   i {
-    color: #FFFFFF;
+    color: var(--icon-color);
   }
 }
 
@@ -147,7 +145,7 @@ h6 {
   height: 20px;
   padding: 4px;
   border-radius: 999px;
-  background-color: #FFFFFF;
+  background-color: var(--pure-white);
   display: inline-block;
   position: relative;
 }
@@ -157,7 +155,7 @@ h6 {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-color: #5964E0;
+  background-color: var(--violet);
   border-radius: 50%;
   position: absolute;
   transition: transform .3s;
@@ -181,7 +179,7 @@ h6 {
 }
 
 .container {
-  background-color: #f4f6f8;
+  background-color: var(--bg-color);
 }
 
 .head-container {
@@ -197,7 +195,7 @@ h6 {
   align-items: center;
   margin-left: 24px;
   margin-right: 24px;
-  background-color: #FFFFFF;
+  background-color: var(--fg-color);
   justify-content: space-between;
   height: 80px;
   border-radius: 5px;
@@ -206,6 +204,7 @@ h6 {
 }
 
 .search-container input {
+  background-color: var(--fg-color);
   position: relative;
   border: none;
   margin-left: 24px;
@@ -236,7 +235,7 @@ input:focus {
 .filter-icon {
   padding: 10px;
   border-radius: 5px;
-  color: #6E8098;
+  color: var(--icon-color);
 }
 
 .cart-container {
@@ -247,7 +246,7 @@ input:focus {
 }
 
 .content-container {
-  background-color: #FFFFFF;
+  background-color: var(--fg-color);
   border-radius: 6px;
   padding: 49px 9px 0px 32px;
 }
@@ -283,7 +282,7 @@ input:focus {
   p {
     font-weight: 400;
     font-size: 16px;
-    color: #6E8098;
+    color: var(--dark-gray);
   }
 }
 
@@ -292,7 +291,7 @@ input:focus {
   p {
     font-weight: 700;
     font-size: 20px;
-    color: #19202D;
+    color: var(--text-color);
     margin-top: 12px;
     margin-bottom: 12px;
   }
@@ -304,7 +303,7 @@ input:focus {
     margin-bottom: 49px;
     font-weight: 400;
     font-size: 16px;
-    color: #6E8098;
+    color: var(--dark-gray);
     margin-bottom: 40px;
   }
 }
@@ -313,7 +312,7 @@ input:focus {
   p {
     font-weight: 700;
     font-size: 14px;
-    color: #5964E0;
+    color: var(--violet);
     padding-bottom: 36px;
   }
 }
@@ -342,7 +341,7 @@ input:focus {
 
   .icons-filter-search .search-icon {
     background-color: transparent;
-    color: #5964e0;
+    color: var(--violet);
     padding: 0px;
     font-size: 24px;
     display: flex;
@@ -371,7 +370,7 @@ input:focus {
     align-items: center;
     margin-left: 39px;
     margin-right: 39px;
-    background-color: #FFFFFF;
+    background-color: var(--fg-color);
     height: 80px;
     border-radius: 5px;
     margin-top: -40px;
@@ -379,6 +378,7 @@ input:focus {
 
     input {
       position: relative;
+      background-color: var(--fg-color);
       border: none;
       height: 20px;
       width: 140px;
@@ -413,7 +413,7 @@ input:focus {
   .icons-filter-location .location {
     padding-left: 24px;
     font-size: 20px;
-    color: #5964e0;
+    color: var(--violet);
     display: flex;
   }
 
@@ -435,14 +435,14 @@ input:focus {
     justify-content: space-around;
 
     p {
-      color: #19202D;
+      color: var(--text-color);
       font-size: 16px;
       font-weight: 700;
     }
 
     button {
-      color: #FFFFFF;
-      background-color: #5964E0;
+      color: var(--pure-white);
+      background-color: var(--violet);
       border: none;
       border-radius: 5px;
       padding: 16px 14px;
