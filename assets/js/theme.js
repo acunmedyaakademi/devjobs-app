@@ -1,6 +1,7 @@
 const toggleButton = document.querySelector('#theme-btn');
 const body = document.body;
 const userPreference = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+console.log(userPreference);
 
 function themeInit(){
   const savedTheme = localStorage.getItem('theme') || userPreference;

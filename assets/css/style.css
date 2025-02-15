@@ -12,8 +12,6 @@
 }
 
 body[data-theme="light"] {
-  --bg-image-mobile: url('../images/bg-mobile-light.svg');
-  --bg-image-desktop: url('../images/bg-desktop-light.svg');
   --bg-color: var(--light-gray);
   --fg-color: var(--pure-white);
   --text-color: var(--very-dark-blue);
@@ -23,8 +21,6 @@ body[data-theme="light"] {
 }
 
 body[data-theme="dark"] {
-  --bg-image-mobile: url('../images/bg-mobile-dark.svg');
-  --bg-image-desktop: url('../images/bg-desktop-dark.svg');
   --bg-color: var(--midnight);
   --fg-color: var(--very-dark-blue);
   --text-color: var(--pure-white);
